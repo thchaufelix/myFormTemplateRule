@@ -1,0 +1,113 @@
+{
+  "common_props": [
+    {
+      "name": "type",
+      "props": {
+        "input_type": "text",
+        "required": true
+      }
+    },
+    {
+      "name": "key",
+      "props": {
+        "input_type": "text",
+        "required": true
+      }
+    },
+    {
+      "name": "session",
+      "props": {
+        "input_type": "text",
+        "required": true
+      }
+    },
+    {
+      "name": "caption",
+      "props": {
+        "input_type": "text",
+        "required": false
+      }
+    },
+    {
+      "name": "divider",
+      "props": {
+        "input_type": "boolean numeric",
+        "required": false
+      }
+    },
+    {
+      "name": "bgColor",
+      "props": {
+        "input_type": "color",
+        "required": false
+      }
+    },
+    {
+      "name": "pdf",
+      "props": {
+        "input_type": "numeric",
+        "required": false
+      }
+    },
+    {
+      "name": "pdfPage",
+      "props": {
+        "input_type": "numeric",
+        "required": false
+      }
+    },
+    {
+      "name": "location",
+      "props": {
+        "input_type": "list numeric",
+        "required": false
+      }
+    },
+    {
+      "name": "lines",
+      "props": {
+        "input_type": "numeric",
+        "required": false
+      }
+    },
+    {
+      "name": "textlimit",
+      "props": {
+        "input_type": "numeric",
+        "required": false
+      }
+    },
+    {
+      "name": "caption",
+      "props": {
+        "input_type": "text",
+        "required": false
+      }
+    },
+    {
+      "name": "flowStep",
+      "props": {
+        "input_type": "numeric",
+        "required": true
+      }
+    },
+    {
+      "name": "editable",
+      "props": {
+        "input_type": "list text",
+        "default": ["none"],
+        "required": true
+      }
+    }
+  ],
+  "individual_props": {
+    "input": {},
+    "dropDown": {},
+    "radio": {},
+    "radioButtonGroup": {},
+    "mediaPicker": {},
+    "datetimePicker": {},
+    "signature": {}
+  }
+
+}
