@@ -57,27 +57,6 @@
       }
     },
     {
-      "name": "location",
-      "props": {
-        "input_type": "list numeric",
-        "required": false
-      }
-    },
-    {
-      "name": "lines",
-      "props": {
-        "input_type": "numeric",
-        "required": false
-      }
-    },
-    {
-      "name": "textlimit",
-      "props": {
-        "input_type": "numeric",
-        "required": false
-      }
-    },
-    {
       "name": "caption",
       "props": {
         "input_type": "text",
@@ -98,16 +77,375 @@
         "default": ["none"],
         "required": true
       }
+    },
+    {
+      "name": "disabled",
+      "props": {
+        "input_type": "boolean numeric",
+        "default": 1,
+        "required": true
+      }
     }
   ],
   "individual_props": {
-    "input": {},
-    "dropDown": {},
-    "radio": {},
-    "radioButtonGroup": {},
-    "mediaPicker": {},
-    "datetimePicker": {},
-    "signature": {}
+    "input": [
+      {
+        "name": "spliter",
+        "props": {
+          "input_type": "text",
+          "required": false
+        }
+    },
+      {
+      "name": "lines",
+      "props": {
+        "input_type": "numeric",
+        "required": false
+      }
+    },
+      {
+      "name": "textlimit",
+      "props": {
+        "input_type": "numeric",
+        "required": false
+      }
+      },
+      {
+        "name": "location",
+        "props": {
+          "input_type": "list numeric",
+          "size": 2,
+          "duplicable": false,
+          "required": false
+        }
+      }
+    ],
+    "dropDown": [
+      {
+        "name": "item",
+        "props": {
+          "input_type": "list object",
+          "template": [
+            {
+              "name": "key",
+               "props": {
+                 "input_type": "text"
+               }
+            },
+            {
+              "name": "title",
+               "props": {
+                 "input_type": "text"
+               }
+            }
+          ],
+          "required": true
+        }
+      },
+      {
+          "name": "default",
+          "props": {
+            "input_type": "text",
+            "required": true
+          }
+        },
+      {
+        "name": "location",
+        "props": {
+          "input_type": "list numeric",
+          "size": 2,
+          "duplicable": false,
+          "required": true
+        }
+      },
+      {
+      "name": "lines",
+      "props": {
+        "input_type": "numeric",
+        "required": false
+      }
+    },
+      {
+      "name": "textlimit",
+      "props": {
+        "input_type": "numeric",
+        "required": false
+      }
+      }
+    ],
+    "text": [
+      {
+        "name": "item",
+        "props": {
+          "input_type": "text",
+          "required": true
+        }
+      }
+    ],
+    "radioButtonGroup": [
+      {
+        "name": "item",
+        "props": {
+          "input_type": "list object",
+          "template": [
+            {
+              "name": "key",
+               "props": {
+                 "input_type": "text",
+                 "required": true
+               }
+            },
+            {
+              "name": "title",
+               "props": {
+                 "input_type": "text",
+                 "required": true
+               }
+            },
+            {
+              "name": "location",
+              "props": {
+                "input_type": "list numeric",
+                "size": 4,
+                "duplicable": true,
+                "required": true
+              }
+            }
+          ],
+          "required": true
+        }
+      },
+      {
+        "name": "location",
+        "props": {
+          "input_type": "object",
+          "template": [
+            {
+              "name": "style",
+               "props": {
+                 "input_type": "text",
+                 "options": ["line", "tick", "text", "cross"],
+                 "required": true
+               }
+            }
+          ],
+          "template_increment": {
+            "delimiter": "_",
+            "initial": 1
+          },
+          "required": true
+        }
+      },
+      {
+        "name": "direction",
+        "props": {
+          "input_type": "text",
+          "options": ["column", "row"],
+          "required": true
+        }
+      }
+    ],
+    "imagePicker": [
+      {
+        "name": "limitation",
+        "props": {
+          "input_type": "numeric",
+          "required": true
+        }
+      },
+      {
+        "name": "allow",
+        "props": {
+          "input_type": "list text",
+          "size": 1,
+          "duplicable": false,
+          "option": ["pdf, image"],
+          "required": false
+        }
+      },
+      {
+        "name": "location",
+        "props": {
+          "input_type": "list numeric",
+          "size": 4,
+          "duplicable": true,
+          "required": true
+        }
+      }
+    ],
+    "checkBox": [],
+    "datetimePicker": [
+      {
+        "name": "location",
+        "props": {
+          "input_type": "list numeric",
+          "size": 4,
+          "duplicable": false,
+          "required": true
+        }
+      }
+    ],
+    "signature": [
+      {
+        "name": "flow",
+        "props": {
+          "input_type": "numeric",
+          "required": true
+        }
+      },
+      {
+        "name": "location",
+        "props": {
+          "input_type": "object",
+          "template": [
+            {
+              "name": "text",
+              "props": {
+                "input_type": "list numeric",
+                "size": 2,
+                "duplicable": false,
+                "required": false
+              }
+            },
+            {
+              "name": "fullname",
+              "props": {
+                "input_type": "list numeric",
+                "size": 2,
+                "duplicable": false,
+                "required": false
+              }
+            },
+            {
+              "name": "shortname",
+              "props": {
+                "input_type": "list numeric",
+                "size": 2,
+                "duplicable": false,
+                "required": false
+              }
+            },
+            {
+              "name": "company",
+              "props": {
+                "input_type": "list numeric",
+                "size": 2,
+                "duplicable": false,
+                "required": false
+              }
+            },
+            {
+              "name": "title",
+              "props": {
+                "input_type": "list numeric",
+                "size": 2,
+                "duplicable": false,
+                "required": false
+              }
+            },
+            {
+              "name": "role",
+              "props": {
+                "input_type": "list numeric",
+                "size": 2,
+                "duplicable": false,
+                "required": false
+              }
+            },
+            {
+              "name": "checkBox",
+              "props": {
+                "input_type": "list numeric",
+                "size": 4,
+                "duplicable": false,
+                "required": false
+              }
+            },
+            {
+              "name": "line",
+              "props": {
+                "input_type": "list numeric",
+                "size": 4,
+                "duplicable": true,
+                "required": false
+              }
+            },
+            {
+              "name": "datetimefull",
+              "props": {
+                "input_type": "list numeric",
+                "size": 4,
+                "duplicable": false,
+                "required": false
+              }
+            },
+            {
+              "name": "datetime",
+              "props": {
+                "input_type": "list numeric",
+                "size": 4,
+                "duplicable": false,
+                "required": false
+              }
+            },
+            {
+              "name": "date",
+              "props": {
+                "input_type": "list numeric",
+                "size": 2,
+                "duplicable": false,
+                "required": false
+              }
+            },
+            {
+              "name": "signature",
+              "props": {
+                "input_type": "list numeric",
+                "size": 4,
+                "duplicable": false,
+                "required": false
+              }
+            }
+          ],
+          "required": true
+        }
+      }
+    ],
+    "customItem": [
+      {
+        "name": "item",
+        "props": {
+          "input_type": "list object",
+          "template": [
+            {
+              "name": "key",
+              "input_type": "text",
+              "required": true
+            },
+            {
+              "name": "title",
+              "input_type": "text",
+              "required": true
+            }
+          ],
+          "required": true
+        }
+      },
+      {
+          "name": "itemName",
+          "props": {
+            "input_type": "text",
+            "required": true
+          }
+        },
+      {
+        "name": "limit",
+        "props": {
+          "input_type": "numeric",
+          "required": true
+        }
+      }
+    ]
   }
 
 }
