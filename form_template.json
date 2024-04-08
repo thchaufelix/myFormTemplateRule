@@ -3,87 +3,108 @@
     {
       "name": "type",
       "props": {
-        "input_type": "text",
+        "item_type": "text",
         "required": true
       }
     },
     {
       "name": "key",
       "props": {
-        "input_type": "text",
+        "item_type": "text",
         "required": true
       }
     },
     {
       "name": "session",
       "props": {
-        "input_type": "text",
+        "item_type": "text",
         "required": true
+      }
+    },
+    {
+      "name": "session_zh",
+      "props": {
+        "item_type": "text",
+        "required": false
       }
     },
     {
       "name": "caption",
       "props": {
-        "input_type": "text",
+        "item_type": "text",
         "required": false
       }
     },
     {
       "name": "divider",
       "props": {
-        "input_type": "boolean numeric",
+        "item_type": "boolean",
+        "props": {
+          "item_type": "numeric",
+          "required": true
+        },
         "required": false
       }
     },
     {
       "name": "bgColor",
       "props": {
-        "input_type": "color",
+        "item_type": "color",
         "required": false
       }
     },
     {
       "name": "pdf",
       "props": {
-        "input_type": "numeric",
+        "item_type": "numeric",
         "required": false
       }
     },
     {
       "name": "pdfPage",
       "props": {
-        "input_type": "numeric",
+        "item_type": "numeric",
         "required": false
       }
     },
     {
       "name": "caption",
       "props": {
-        "input_type": "text",
+        "item_type": "text",
         "required": false
       }
     },
     {
       "name": "flowStep",
       "props": {
-        "input_type": "numeric",
+        "item_type": "numeric",
         "required": true
       }
     },
     {
       "name": "editable",
       "props": {
-        "input_type": "list text",
-        "default": ["none"],
-        "required": true
+        "item_type": "list",
+        "size": 1,
+        "duplicable": true,
+        "required": true,
+        "props": {
+          "item_type": "text",
+          "default": "none",
+          "required": false
+        }
       }
     },
     {
       "name": "disabled",
       "props": {
-        "input_type": "boolean numeric",
-        "default": 1,
-        "required": true
+        "item_type": "boolean",
+        "required": true,
+        "props": {
+          "item_type": "numeric",
+          "required": true,
+          "default": 1
+        }
       }
     }
   ],
@@ -92,31 +113,71 @@
       {
         "name": "spliter",
         "props": {
-          "input_type": "text",
+          "item_type": "text",
           "required": false
         }
-    },
+      },
       {
-      "name": "lines",
-      "props": {
-        "input_type": "numeric",
-        "required": false
-      }
-    },
+        "name": "lines",
+        "props": {
+          "item_type": "numeric",
+          "required": false
+        }
+      },
       {
-      "name": "textlimit",
-      "props": {
-        "input_type": "numeric",
-        "required": false
-      }
+        "name": "textlimit",
+        "props": {
+          "item_type": "numeric",
+          "required": false
+        }
       },
       {
         "name": "location",
         "props": {
-          "input_type": "list numeric",
+          "item_type": "list",
           "size": 2,
           "duplicable": false,
+          "required": false,
+          "props": {
+            "item_type": "numeric",
+            "required": true
+          }
+        }
+      }
+    ],
+    "inputBlock": [
+      {
+        "name": "spliter",
+        "props": {
+          "item_type": "text",
           "required": false
+        }
+      },
+      {
+        "name": "lines",
+        "props": {
+          "item_type": "numeric",
+          "required": false
+        }
+      },
+      {
+        "name": "textlimit",
+        "props": {
+          "item_type": "numeric",
+          "required": false
+        }
+      },
+      {
+        "name": "location",
+        "props": {
+          "item_type": "list",
+          "size": 2,
+          "duplicable": false,
+          "required": false,
+          "props": {
+            "item_type": "numeric",
+            "required": true
+          }
         }
       }
     ],
@@ -124,60 +185,81 @@
       {
         "name": "item",
         "props": {
-          "input_type": "list object",
-          "template": [
-            {
-              "name": "key",
-               "props": {
-                 "input_type": "text"
-               }
-            },
-            {
-              "name": "title",
-               "props": {
-                 "input_type": "text"
-               }
-            }
-          ],
-          "required": true
+          "item_type": "list",
+          "size": 1,
+          "duplicable": false,
+          "required": true,
+          "props": {
+            "item_type": "object",
+            "template": [
+              {
+                "name": "key",
+                "props": {
+                  "item_type": "text",
+                  "required": true
+                }
+              },
+              {
+                "name": "title",
+                "props": {
+                  "item_type": "text",
+                  "required": true
+                }
+              }
+            ],
+            "required": true
+          }
         }
       },
       {
-          "name": "default",
-          "props": {
-            "input_type": "text",
-            "required": true
-          }
-        },
+        "name": "default",
+        "props": {
+          "item_type": "text",
+          "required": true
+        }
+      },
       {
         "name": "location",
         "props": {
-          "input_type": "list numeric",
+          "item_type": "list",
           "size": 2,
           "duplicable": false,
-          "required": true
+          "required": true,
+          "props": {
+            "item_type": "numeric",
+            "required": true
+          }
         }
       },
       {
-      "name": "lines",
-      "props": {
-        "input_type": "numeric",
-        "required": false
-      }
-    },
+        "name": "lines",
+        "props": {
+          "item_type": "numeric",
+          "required": false
+        }
+      },
       {
-      "name": "textlimit",
-      "props": {
-        "input_type": "numeric",
-        "required": false
-      }
+        "name": "textlimit",
+        "props": {
+          "item_type": "numeric",
+          "required": false
+        }
       }
     ],
     "text": [
       {
         "name": "item",
         "props": {
-          "input_type": "text",
+          "item_type": "text",
+          "required": true
+        }
+      }
+    ],
+    "textFold": [
+      {
+        "name": "item",
+        "props": {
+          "item_type": "text",
           "required": true
         }
       }
@@ -186,61 +268,79 @@
       {
         "name": "item",
         "props": {
-          "input_type": "list object",
-          "template": [
-            {
-              "name": "key",
-               "props": {
-                 "input_type": "text",
-                 "required": true
-               }
-            },
-            {
-              "name": "title",
-               "props": {
-                 "input_type": "text",
-                 "required": true
-               }
-            },
-            {
-              "name": "location",
-              "props": {
-                "input_type": "list numeric",
-                "size": 4,
-                "duplicable": true,
-                "required": true
+          "item_type": "list",
+          "size": 1,
+          "duplicable": false,
+          "required": true,
+          "props": {
+            "item_type": "object",
+            "template": [
+              {
+                "name": "key",
+                "props": {
+                  "item_type": "text",
+                  "required": true
+                }
+              },
+              {
+                "name": "title",
+                "props": {
+                  "item_type": "text",
+                  "required": true
+                }
+              },
+              {
+                "name": "location",
+                "props": {
+                  "item_type": "list",
+                  "size": 4,
+                  "duplicable": true,
+                  "required": true,
+                  "props": {
+                    "item_type": "numeric",
+                    "required": true
+                  }
+                }
               }
-            }
-          ],
-          "required": true
+            ]
+          }
         }
       },
       {
         "name": "location",
         "props": {
-          "input_type": "object",
+          "item_type": "object",
           "template": [
             {
               "name": "style",
-               "props": {
-                 "input_type": "text",
-                 "options": ["line", "tick", "text", "cross"],
-                 "required": true
-               }
+              "props": {
+                "item_type": "text",
+                "options": [
+                  "line",
+                  "tick",
+                  "text",
+                  "cross"
+                ],
+                "required": true
+              }
             }
           ],
           "template_increment": {
             "delimiter": "_",
             "initial": 1
           },
+          "duplicable": true,
           "required": true
         }
       },
       {
         "name": "direction",
         "props": {
-          "input_type": "text",
-          "options": ["column", "row"],
+          "item_type": "text",
+          "options": [
+            "column",
+            "row"
+          ],
           "required": true
         }
       }
@@ -249,39 +349,111 @@
       {
         "name": "limitation",
         "props": {
-          "input_type": "numeric",
+          "item_type": "numeric",
           "required": true
         }
       },
       {
         "name": "allow",
         "props": {
-          "input_type": "list text",
+          "item_type": "list",
           "size": 1,
           "duplicable": false,
-          "option": ["pdf, image"],
-          "required": false
+          "required": false,
+          "props": {
+            "item_type": "text",
+            "options": [
+              "pdf, image"
+            ],
+            "required": true
+          }
         }
       },
       {
         "name": "location",
         "props": {
-          "input_type": "list numeric",
+          "item_type": "list",
           "size": 4,
           "duplicable": true,
+          "required": true,
+          "props": {
+            "item_type": "numeric",
+            "required": true
+          }
+        }
+      }
+    ],
+    "libraryPicker": [
+      {
+        "name": "limitation",
+        "props": {
+          "item_type": "numeric",
+          "required": true
+        }
+      },
+      {
+        "name": "allow",
+        "props": {
+          "item_type": "list",
+          "size": 1,
+          "duplicable": false,
+          "required": false,
+          "props": {
+            "item_type": "text",
+            "options": [
+              "pdf, image"
+            ],
+            "required": true
+          }
+        }
+      },
+      {
+        "name": "location",
+        "props": {
+          "item_type": "list",
+          "size": 4,
+          "duplicable": true,
+          "required": true,
+          "props": {
+            "item_type": "numeric",
+            "required": true
+          }
+        }
+      },
+      {
+        "name": "directory",
+        "props": {
+          "item_type": "text",
           "required": true
         }
       }
     ],
-    "checkBox": [],
+    "checkBox": [
+      {
+        "name": "style",
+        "props": {
+          "item_type": "text",
+          "options": [
+            "tick",
+            "cross",
+            "line"
+          ],
+          "required": true
+        }
+      }
+    ],
     "datetimePicker": [
       {
         "name": "location",
         "props": {
-          "input_type": "list numeric",
+          "item_type": "list",
           "size": 4,
           "duplicable": false,
-          "required": true
+          "required": true,
+          "props": {
+            "item_type": "numeric",
+            "required": true
+          }
         }
       }
     ],
@@ -289,121 +461,169 @@
       {
         "name": "flow",
         "props": {
-          "input_type": "numeric",
+          "item_type": "numeric",
           "required": true
         }
       },
       {
         "name": "location",
         "props": {
-          "input_type": "object",
+          "item_type": "object",
           "template": [
             {
               "name": "text",
               "props": {
-                "input_type": "list numeric",
+                "item_type": "list",
                 "size": 2,
                 "duplicable": false,
-                "required": false
+                "required": false,
+                "props": {
+                  "item_type": "numeric",
+                  "required": true
+                }
               }
             },
             {
               "name": "fullname",
               "props": {
-                "input_type": "list numeric",
+                "item_type": "list",
                 "size": 2,
                 "duplicable": false,
-                "required": false
+                "required": false,
+                "props": {
+                  "item_type": "numeric",
+                  "required": true
+                }
               }
             },
             {
               "name": "shortname",
               "props": {
-                "input_type": "list numeric",
+                "item_type": "list",
                 "size": 2,
                 "duplicable": false,
-                "required": false
+                "required": false,
+                "props": {
+                  "item_type": "numeric",
+                  "required": true
+                }
               }
             },
             {
               "name": "company",
               "props": {
-                "input_type": "list numeric",
+                "item_type": "list",
                 "size": 2,
                 "duplicable": false,
-                "required": false
+                "required": false,
+                "props": {
+                  "item_type": "numeric",
+                  "required": true
+                }
               }
             },
             {
               "name": "title",
               "props": {
-                "input_type": "list numeric",
+                "item_type": "list",
                 "size": 2,
                 "duplicable": false,
-                "required": false
+                "required": false,
+                "props": {
+                  "item_type": "numeric",
+                  "required": true
+                }
               }
             },
             {
               "name": "role",
               "props": {
-                "input_type": "list numeric",
+                "item_type": "list",
                 "size": 2,
                 "duplicable": false,
-                "required": false
+                "required": false,
+                "props": {
+                  "item_type": "numeric",
+                  "required": true
+                }
               }
             },
             {
               "name": "checkBox",
               "props": {
-                "input_type": "list numeric",
+                "item_type": "list",
                 "size": 4,
                 "duplicable": false,
-                "required": false
+                "required": false,
+                "props": {
+                  "item_type": "numeric",
+                  "required": true
+                }
               }
             },
             {
               "name": "line",
               "props": {
-                "input_type": "list numeric",
+                "item_type": "list",
                 "size": 4,
                 "duplicable": true,
-                "required": false
+                "required": false,
+                "props": {
+                  "item_type": "numeric",
+                  "required": true
+                }
               }
             },
             {
               "name": "datetimefull",
               "props": {
-                "input_type": "list numeric",
+                "item_type": "list",
                 "size": 4,
                 "duplicable": false,
-                "required": false
+                "required": false,
+                "props": {
+                  "item_type": "numeric",
+                  "required": true
+                }
               }
             },
             {
               "name": "datetime",
               "props": {
-                "input_type": "list numeric",
+                "item_type": "list",
                 "size": 4,
                 "duplicable": false,
-                "required": false
+                "required": false,
+                "props": {
+                  "item_type": "numeric",
+                  "required": true
+                }
               }
             },
             {
               "name": "date",
               "props": {
-                "input_type": "list numeric",
+                "item_type": "list",
                 "size": 2,
                 "duplicable": false,
-                "required": false
+                "required": false,
+                "props": {
+                  "item_type": "numeric",
+                  "required": true
+                }
               }
             },
             {
               "name": "signature",
               "props": {
-                "input_type": "list numeric",
+                "item_type": "list",
                 "size": 4,
                 "duplicable": false,
-                "required": false
+                "required": false,
+                "props": {
+                  "item_type": "numeric",
+                  "required": true
+                }
               }
             }
           ],
@@ -415,41 +635,49 @@
       {
         "name": "item",
         "props": {
-          "input_type": "list object",
-          "template": [
-            {
-              "name": "key",
-              "props": {
-                "input_type": "text",
-                "required": true
-              }
-            },
-            {
-              "name": "title",
-              "props": {
-                "input_type": "text",
-                "required": true
-              }
-            }
-          ],
+          "item_type": "list",
+          "size": 1,
+          "required": true,
+          "props": {
+            "item_type": "object",
+            "template": null,
+            "required": true
+          }
+        }
+      },
+      {
+        "name": "itemName",
+        "props": {
+          "item_type": "text",
           "required": true
         }
       },
       {
-          "name": "itemName",
-          "props": {
-            "input_type": "text",
-            "required": true
-          }
-        },
-      {
         "name": "limit",
         "props": {
-          "input_type": "numeric",
+          "item_type": "numeric",
           "required": true
+        }
+      },
+      {
+        "name": "offset",
+        "props": {
+          "item_type": "list",
+          "size": 1,
+          "duplicable": false,
+          "required": true,
+          "props": {
+            "item_type": "numeric",
+            "size": 2,
+            "duplicable": true,
+            "required": true,
+            "props": {
+              "item_type": "numeric",
+              "required": true
+            }
+          }
         }
       }
     ]
   }
-
 }
