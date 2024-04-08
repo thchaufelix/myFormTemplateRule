@@ -50,7 +50,12 @@
       "name": "bgColor",
       "props": {
         "item_type": "color",
-        "required": false
+        "required": false,
+        "props": {
+          "item_type": "text",
+          "option": ["#FFFCF2", "#EDFFFB", "#F9F5FF"],
+          "required": true
+        }
       }
     },
     {
@@ -667,7 +672,7 @@
           "duplicable": false,
           "required": true,
           "props": {
-            "item_type": "numeric",
+            "item_type": "list",
             "size": 2,
             "duplicable": true,
             "required": true,
