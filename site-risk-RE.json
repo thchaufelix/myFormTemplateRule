@@ -1,0 +1,584 @@
+[
+  {
+    "key": "ContractNo",
+    "type": "input",
+    "session": "Contract No.",
+    "disabled": 1,
+    "editable": [
+      "none"
+    ]
+  },
+  {
+    "key": "RefNo",
+    "type": "input",
+    "session": "Ref. No.",
+    "spliter": "-",
+    "disabled": 1,
+    "editable": [
+      "none"
+    ],
+    "location": [
+      978, 180
+    ]
+  },
+  {
+    "key": "RefNo_0",
+    "type": "dropDown",
+    "session": "Section",
+    "item": [
+      {"key": 1, "title": "A"},
+      {"key": 2, "title": "B"},
+      {"key": 3, "title": "S"}
+    ],
+    "default": "Section",
+    "disabled": 1,
+    "editable": [
+      "applicant"
+    ]
+  },
+  {
+    "key": "RefNo_1",
+    "type": "dropDown",
+    "session": "Location",
+    "item": [
+      {"key": 1, "title": "P"},
+      {"key": 2, "title": "C"},
+      {"key": 3, "title": "T1"},
+      {"key": 4, "title": "T2"}
+    ],
+    "default": "Location",
+    "disabled": 1,
+    "editable": [
+      "applicant"
+    ]
+  },
+  {
+    "key": "SiteAgentTitle",
+    "item": [
+      {"key": 2, "title": "RE"},
+      {"key": 1, "title": "COW"},
+      {"key": 3, "title": "BSI"}
+    ],
+    "type": "dropDown",
+    "divider": 0,
+    "session": "To:",
+    "default": "To:",
+    "disabled": 1,
+    "location": [
+        973, 392
+    ],
+    "editable": [
+      "none"
+    ],
+    "direction": "row"
+  },
+  {
+    "key": "DrawingNum",
+    "type": "input",
+    "session": "Drawing No.",
+    "disabled": 1,
+    "editable": [
+      "applicant"
+    ],
+    "location": [
+      610, 451
+    ],
+    "textlimit": 30
+  },
+  {
+    "key": "Part1",
+    "item": "The following works will be ready for inspection",
+    "type": "text",
+    "divider": 1,
+    "session": "Part 1: Works information"
+  },
+  {
+    "key": "DateScheduled",
+    "type": "datetimepicker",
+    "caption": "",
+    "session": "",
+    "disabled": 1,
+    "editable": [
+      "applicant"
+    ],
+    "location": [
+      654, 521, 1021, 521
+    ]
+  },
+  {
+    "key": "Location",
+    "item": [
+     {
+        "key": 1,
+        "title": "Zone A"
+      },
+      {
+        "key": 2,
+        "title": "Zone B"
+      },
+      {
+        "key": 3,
+        "title": "Zone C"
+      },
+      {
+        "key": 4,
+        "title": "Zone D"
+      },
+      {
+        "key": 5,
+        "title": "Others"
+      }
+    ],
+    "type": "dropDown",
+    "lines": 3,
+    "lineheight": 8,
+    "default": "Location",
+    "session": "Location of Work",
+    "disabled": 1,
+    "editable": [
+        "applicant"
+    ],
+    "location": [
+        343, 566
+    ],
+    "textlimit": 270
+  },
+  {
+    "key": "LocationRe",
+    "type": "input",
+    "session": "Location Remarks",
+    "disabled": 1,
+    "editable": [
+        "applicant"
+    ],
+    "textlimit": 220
+  },
+  {
+    "id": 5,
+    "key": "WorkTobeInspected",
+    "item": [
+      {
+        "key": 1,
+        "title": "Inspection for the general cleaning at the above said location"
+      },
+      {
+        "key": 2,
+        "title": "Building Works"
+      },
+      {
+        "key": 3,
+        "title": "Carriageways: Sub-base Material and Bituminous Material"
+      },
+      {
+        "key": 4,
+        "title": "Concrete and Joints in Concrete"
+      },
+      {
+        "key": 5,
+        "title": "Concrete Carriageways"
+      },
+      {
+        "key": 6,
+        "title": "Drainage Works"
+      },
+      {
+        "key": 7,
+        "title": "Earthworks"
+      },
+      {
+        "key": 8,
+        "title": "Environmental Protection"
+      },
+      {
+        "key": 9,
+        "title": "Fencing"
+      },
+      {
+        "key": 10,
+        "title": "Formwork and Finishes to Concrete"
+      },
+      {
+        "key": 11,
+        "title": "General"
+      },
+      {
+        "key": 12,
+        "title": "Geotechnical Works"
+      },
+      {
+        "key": 13,
+        "title": "Handrailing, Ladders, Stairs and Flooring"
+      },
+      {
+        "key": 14,
+        "title": "Landscape Softworks and Establishment Works"
+      },
+      {
+        "key": 15,
+        "title": "Marine Works"
+      },
+      {
+        "key": 16,
+        "title": "Miscellaneous Roadworks"
+      },
+      {
+        "key": 17,
+        "title": "Piling Works"
+      },
+      {
+        "key": 18,
+        "title": "Preservation and Protection of Trees"
+      },
+      {
+        "key": 19,
+        "title": "Prestressing"
+      },
+      {
+        "key": 20,
+        "title": "Site Clearance"
+      },
+      {
+        "key": 21,
+        "title": "Steel Reinforcement"
+      },
+      {
+        "key": 22,
+        "title": "Steelwork"
+      },
+      {
+        "key": 23,
+        "title": "Traffic Signs, Road Markings and Road Studs"
+      },
+      {
+        "key": 24,
+        "title": "Water Retaining Structures"
+      },
+      {
+        "key": 25,
+        "title": "Watter Supply Pipeworks"
+      },
+      {
+        "key": 26,
+        "title": "Works for Electrical and Mechanical Installations"
+      },
+      {
+        "key": 27,
+        "title": "Others"
+      },
+      {
+        "key": 28,
+        "title": "Inspection for the workmanship of waterproofing membrane (Tanking) at the above said location"
+      }
+    ],
+    "type": "dropDown",
+    "lines": 4,
+    "lineheight": 8,
+    "default": "Description of Works",
+    "session": "Works to be Inspected / Surveyed",
+    "disabled": 1,
+    "editable": [
+        "applicant"
+    ],
+    "location": [
+      343, 697
+    ],
+    "textlimit": 360
+  },
+  {
+    "key": "WorkTobeInspectedRe",
+    "type": "input",
+    "session": "Work Remarks",
+    "disabled": 1,
+    "editable": [
+        "applicant"
+    ],
+    "textlimit": 330
+  },
+  {
+    "key": "CheckedBy",
+    "item": [
+      {
+          "key": 1,
+          "title": "(BKCL - Site Engineer)"
+      },
+      {
+          "key": 2,
+          "title": "(BKCL - Foreman)"
+      }
+    ],
+    "type": "dropDown",
+    "default": "Checked By",
+    "session": "Checked By",
+    "disabled": 1,
+    "editable": [
+        "applicant"
+    ],
+    "location": [
+        351, 888
+    ]
+  },
+  {
+    "key": "WorkProposed",
+    "type": "input",
+    "session": "Work proposed after approval",
+    "disabled": 1,
+    "lineheight": 8,
+    "lines": 3,
+    "editable": [
+        "applicant"
+    ],
+    "location": [
+        363, 934
+    ],
+    "textlimit": 270
+  },
+  {
+    "key": "WorkProposedRemark",
+    "type": "input",
+    "session": "Remark",
+    "disabled": 1,
+    "lineheight": 8,
+    "lines": 3,
+    "editable": [
+        "applicant"
+    ],
+    "location": [
+        363, 1060
+    ],
+    "textlimit": 270
+  },
+  {
+    "key": "inspection",
+    "type": "customItem",
+    "pdfPage": 1,
+    "session": "",
+    "itemName": "Photo",
+    "limit": 10,
+    "item": [
+      {
+        "key": "itemImageAttachments",
+        "type": "imagePicker",
+        "session": "Image Attachments",
+        "limitation": 1,
+        "allow": ["photo"],
+        "location": {
+          "image": [
+            122, 555, 1165, 1575
+          ],
+          "depend": {
+            "source": [
+              "inspection_description_"
+            ],
+            "location": [
+              122, 1628
+            ],
+            "lines": 3,
+            "textlimit": 360
+          }
+        }
+      },
+      {
+        "key": "description",
+        "type": "input",
+        "session": "description",
+        "textlimit": 360
+      }
+    ],
+    "disabled": 1,
+    "editable": [
+      "applicant"
+    ]
+  },
+  {
+    "key": "PdfAttachments",
+    "type": "imagePicker",
+    "session": "PDF Attachments",
+    "allow": ["pdf"],
+    "disabled": 1,
+    "editable": [
+      "applicant"
+    ],
+    "location": [
+        160,
+        352,
+        1077,
+        914,
+        160,
+        1015,
+        1077,
+        1585
+    ],
+    "limitation": 5
+  },
+  {
+    "key": "Part2",
+    "item": "The above work has been inspected with result",
+    "type": "text",
+    "bgColor": "#EDFFFB",
+    "divider": 1,
+    "session": "Part 2: information Result"
+  },
+  {
+    "key": "InspectResult",
+    "item": [
+      {
+        "key": 1,
+        "title": "pass",
+        "location": [
+          104, 1257, 114, 1267
+        ]
+      },
+      {
+        "key": 2,
+        "title": "Partially Pass",
+        "location": [
+          104, 1286, 114, 1296
+        ]
+      },
+      {
+        "key": 3,
+        "title": "Not pass, re-inspection was required",
+        "location": [
+          104, 1312, 114, 1322
+        ]
+      }
+    ],
+    "type": "radioButtonGroup",
+    "bgColor": "#EDFFFB",
+    "divider": 0,
+    "session": "",
+    "disabled": 1,
+    "editable": [
+      "re"
+    ],
+    "location": {
+      "style": "cross"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "SiteAgentTitle",
+    "item": [
+      {
+        "key": 2,
+        "title": "RE",
+        "location": [
+          369, 1623, 416, 1623,
+          429, 1623, 459, 1623
+        ]
+      },
+      {
+        "key": 1,
+        "title": "COW",
+        "location": [
+          332, 1623, 359, 1623,
+          429, 1623, 459, 1623
+        ]
+      },
+      {
+        "key": 3,
+        "title": "BSI",
+        "location": [
+          332, 1623, 359, 1623,
+          369, 1623, 416, 1623
+        ]
+      }
+    ],
+    "type": "radioButtonGroup",
+    "bgColor": "#EDFFFB",
+    "divider": 0,
+    "session": "Inspected By",
+    "disabled": 1,
+    "editable": [
+      "none"
+    ],
+    "location": {
+      "style": "line",
+      "style_1": "line"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "InspectResultComments",
+    "type": "input",
+    "bgColor": "#EDFFFB",
+    "session": "Comments",
+    "lines": 3,
+    "disabled": 1,
+    "lineheight": 20,
+    "editable": [
+        "re"
+    ],
+    "location": [
+        107, 1391
+    ],
+    "textlimit": 345
+  },
+  {
+    "key": "sign1",
+    "flow": 1,
+    "type": "signature",
+    "session": "Applicant Signature",
+    "disabled": 1,
+    "pdfPage": 1,
+    "editable": [
+      "applicant"
+    ],
+    "location": {
+      "fullname": [
+        502, 852
+      ],
+      "datetimefull": [
+        885, 858, 1005, 858
+      ],
+      "signature": [
+        339, 827, 491, 881
+      ]
+    }
+  },
+  {
+    "key": "sign2",
+    "flow": 3,
+    "type": "signature",
+    "session": "RE Signature",
+    "disabled": 1,
+    "pdfPage": 1,
+    "editable": [
+      "re"
+    ],
+    "location": {
+      "signature": [
+        268, 1548, 523, 1608
+      ],
+      "datetimefull": [
+        700, 1585, 982, 1585
+      ]
+    }
+  },
+  {
+    "key": "attachment_title",
+    "type": "attachment_title",
+    "editable": [
+      "none"
+    ],
+    "location": [
+      894, 149
+    ]
+  },
+  {
+    "key": "attachment_extra",
+    "type": "attachment_title",
+    "depend": {
+      "source": [
+        "SiteAgentTitle",
+        "DrawingNum"
+      ],
+      "location": [
+        998, 429, 631, 469
+      ]
+    },
+    "editable": [
+      "none"
+    ]
+  }
+]
