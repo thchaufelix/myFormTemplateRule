@@ -1,0 +1,2892 @@
+[
+  {
+    "key": "RefNo",
+    "page": 1,
+    "type": "input",
+    "prefix": "Demo/Permit/CS/",
+    "preset": "",
+    "pdfPage": 1,
+    "session": "Ref. No.",
+    "session_zh": "參考編號",
+    "disabled": 1,
+    "editable": [
+      "none"
+    ],
+    "location": [
+      271,
+      140
+    ]
+  },
+  {
+    "key": "DateScheduled",
+    "mode": "date",
+    "page": 1,
+    "type": "datetimepicker",
+    "pdfPage": 1,
+    "session": "Issue Date",
+    "session_zh": "簽發日期",
+    "disabled": 1,
+    "editable": [
+      "none"
+    ],
+    "location": [
+      903,
+      170
+    ]
+  },
+  {
+    "key": "Part1",
+    "item": "(to be completed by contractor or his authorized representatives)",
+    "item_zh": "（由承建商或其授權代表填寫）",
+    "page": 1,
+    "type": "text",
+    "divider": 1,
+    "session": "Part 1: Works information",
+    "session_zh": "第一部份：工程資料"
+  },
+  {
+    "key": "AuthorInfo",
+    "flow": 1,
+    "page": 1,
+    "type": "signature",
+    "pdfPage": 1,
+    "session": "",
+    "disabled": 1,
+    "editable": [
+      "part_1"
+    ],
+    "location": {
+      "fullname": [
+        903,
+        200
+      ]
+    }
+  },
+  {
+    "key": "ContractNo",
+    "page": 1,
+    "type": "input",
+    "prefix": "",
+    "pdfPage": 1,
+    "session": "Contract Number",
+    "session_zh": "合約編號",
+    "disabled": 1,
+    "editable": [
+      "none"
+    ],
+    "location": [
+      390,
+      333
+    ]
+  },
+  {
+    "key": "CompanyName",
+    "page": 1,
+    "type": "input",
+    "preset": "",
+    "pdfPage": 1,
+    "session": "Company Name",
+    "session_zh": "公司名稱",
+    "disabled": 1,
+    "editable": [
+      "part_1"
+    ],
+    "location": [
+      822,
+      333
+    ]
+  },
+  {
+    "key": "Location",
+    "item": [
+      {
+        "key": 1,
+        "title": "Portion 1"
+      },
+      {
+        "key": 2,
+        "title": "Portion 2"
+      },
+      {
+        "key": 3,
+        "title": "Portion 3"
+      }
+    ],
+    "page": 1,
+    "type": "dropDown",
+    "lines": 2,
+    "default": "Location of Work",
+    "pdfPage": 1,
+    "session": "Location of Work",
+    "session_zh": "地點",
+    "disabled": 1,
+    "editable": [
+      "part_1"
+    ],
+    "location": [
+      389,
+      369
+    ],
+    "textlimit": 240
+  },
+  {
+    "key": "LocationRe",
+    "page": 1,
+    "type": "input",
+    "preset": "",
+    "pdfPage": 1,
+    "session": "Location Remark",
+    "session_zh": "附加資料 - 地點",
+    "disabled": 1,
+    "editable": [
+      "part_1"
+    ],
+    "textlimit": 200
+  },
+  {
+    "key": "WorkTobeInspected",
+    "item": [
+      {
+        "key": 1,
+        "title": "Portion 1"
+      },
+      {
+        "key": 2,
+        "title": "Portion 2"
+      },
+      {
+        "key": 3,
+        "title": "Portion 3"
+      }
+    ],
+    "page": 1,
+    "type": "dropDown",
+    "lines": 2,
+    "default": "Description of Work",
+    "pdfPage": 1,
+    "session": "Description of Work",
+    "session_zh": "工序",
+    "disabled": 1,
+    "editable": [
+      "part_1"
+    ],
+    "location": [
+      389,
+      420
+    ],
+    "textlimit": 240
+  },
+  {
+    "key": "WorkTobeInspectedRe",
+    "page": 1,
+    "type": "input",
+    "preset": "",
+    "pdfPage": 1,
+    "session": "Works Remark",
+    "session_zh": "附加資料 - 工序",
+    "disabled": 1,
+    "editable": [
+      "part_1"
+    ],
+    "textlimit": 200
+  },
+  {
+    "key": "PeriodPermit",
+    "item": "Period of the Permit",
+    "item_zh": "許可證期限",
+    "page": 1,
+    "type": "text",
+    "divider": 1,
+    "session": ""
+  },
+  {
+    "key": "PeriodPermitStart",
+    "page": 1,
+    "type": "datetimepicker",
+    "pdfPage": 1,
+    "session": "Date of entry to the Confined Space",
+    "session_zh": "進入密閉空間的日期及時間",
+    "disabled": 1,
+    "editable": [
+      "part_1"
+    ],
+    "location": [
+      615,
+      537,
+      925,
+      537
+    ]
+  },
+  {
+    "key": "PeriodPermitEnd",
+    "page": 1,
+    "type": "datetimepicker",
+    "pdfPage": 1,
+    "session": "Expiry date of the permit",
+    "session_zh": "許可證的到期日及時間",
+    "disabled": 1,
+    "editable": [
+      "part_1"
+    ],
+    "location": [
+      615,
+      589,
+      925,
+      589
+    ],
+    "interaction": {
+      "linkage": {
+        "child": {
+          "dayAfter": 1
+        },
+        "parent": {
+          "key": "PeriodPermitStart"
+        }
+      }
+    }
+  },
+  {
+    "key": "NumberOfWorkers",
+    "page": 1,
+    "type": "input",
+    "preset": "1",
+    "pdfPage": 1,
+    "session": "Total Certified workers assigned to this work",
+    "session_zh": "獲指派工作的核准工人數",
+    "disabled": 1,
+    "editable": [
+      "part_1"
+    ],
+    "textlimit": 1
+  },
+  {
+    "key": "PersonInvolved",
+    "item": [
+      {
+        "key": "WorkerName",
+        "type": "input",
+        "session": "Name",
+        "session_zh": "姓名",
+        "location": [
+          558,
+          704
+        ],
+        "textlimit": 60
+      },
+      {
+        "key": "WorkerCertificate",
+        "type": "input",
+        "session": "Confined Space Training Certificate No.",
+        "session_zh": "密閉空間培訓證書編號",
+        "location": [
+          822,
+          704
+        ],
+        "textlimit": 60
+      }
+    ],
+    "page": 1,
+    "type": "customItem",
+    "limit": 5,
+    "offset": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        40
+      ],
+      [
+        0,
+        80
+      ],
+      [
+        0,
+        120
+      ],
+      [
+        0,
+        160
+      ]
+    ],
+    "pdfPage": 1,
+    "session": "Certified workers assigned to this work",
+    "session_zh": "獲指派工作的核准工人",
+    "disabled": 1,
+    "editable": [
+      "part_1"
+    ],
+    "itemName": "workers"
+  },
+  {
+    "key": "StandbyPerson",
+    "item": [
+      {
+        "key": "WorkerName",
+        "type": "input",
+        "session": "Name",
+        "session_zh": "姓名",
+        "location": [
+          558,
+          904
+        ],
+        "textlimit": 60
+      },
+      {
+        "key": "WorkerCertificate",
+        "type": "input",
+        "session": "Confined Space Training Certificate No.",
+        "session_zh": "密閉空間培訓證書編號",
+        "location": [
+          822,
+          904
+        ],
+        "textlimit": 60
+      }
+    ],
+    "page": 1,
+    "type": "customItem",
+    "limit": 2,
+    "offset": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        40
+      ],
+      [
+        0,
+        80
+      ],
+      [
+        0,
+        120
+      ],
+      [
+        0,
+        160
+      ]
+    ],
+    "pdfPage": 1,
+    "session": "Standby person(s) assigned to this work",
+    "session_zh": "獲指派工作的候命人員",
+    "disabled": 1,
+    "editable": [
+      "part_1"
+    ],
+    "itemName": "workers"
+  },
+  {
+    "key": "CompetentPerson",
+    "item": [
+      {
+        "key": "WorkerName",
+        "type": "input",
+        "session": "Name",
+        "session_zh": "姓名",
+        "location": [
+          558,
+          985
+        ],
+        "textlimit": 60
+      },
+      {
+        "key": "WorkerCertificate",
+        "type": "input",
+        "session": "Confined Space Training Certificate No.",
+        "session_zh": "密閉空間培訓證書編號",
+        "location": [
+          822,
+          985
+        ],
+        "textlimit": 60
+      }
+    ],
+    "page": 1,
+    "type": "customItem",
+    "limit": 1,
+    "offset": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        40
+      ],
+      [
+        0,
+        80
+      ],
+      [
+        0,
+        120
+      ],
+      [
+        0,
+        160
+      ]
+    ],
+    "pdfPage": 1,
+    "session": "Competent person for risk assessment",
+    "session_zh": "進行風險評估的合資格人士",
+    "disabled": 1,
+    "editable": [
+      "part_1"
+    ],
+    "itemName": "workers"
+  },
+  {
+    "key": "Part2",
+    "item": "(to be completed by the Competent Person)",
+    "item_zh": "（由合資格人士填寫）",
+    "page": 2,
+    "type": "text",
+    "divider": 1,
+    "session": "Part 2: Risk Assessment",
+    "session_zh": "第二部分：風險評估"
+  },
+  {
+    "key": "Part2A",
+    "item": "",
+    "page": 2,
+    "type": "text",
+    "divider": 1,
+    "session": "A Risk Assessment",
+    "session_Zh": "：風險評估"
+  },
+  {
+    "key": "RiskAssessment",
+    "item": [
+      {
+        "key": "WorkInvolved",
+        "type": "input",
+        "session": "Work Involved",
+        "session_zh": "工作內容",
+        "location": [
+          173,
+          1134
+        ],
+        "textlimit": 90
+      },
+      {
+        "key": "AssociatedHazards",
+        "type": "input",
+        "session": "Associated Hazards",
+        "session_zh": "相關的危害",
+        "location": [
+          656,
+          1134
+        ],
+        "textlimit": 90
+      }
+    ],
+    "page": 2,
+    "type": "customItem",
+    "limit": 5,
+    "offset": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        40
+      ],
+      [
+        0,
+        80
+      ],
+      [
+        0,
+        120
+      ],
+      [
+        0,
+        160
+      ]
+    ],
+    "pdfPage": 1,
+    "session": "Risk Assessment",
+    "session_zh": "風險評估",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "itemName": "item"
+  },
+  {
+    "key": "OtherHazards",
+    "item": [
+      {
+        "key": "WorkInvolved",
+        "type": "input",
+        "session": " Hazards",
+        "session_zh": "危害",
+        "location": [
+          173,
+          1364
+        ],
+        "textlimit": 130
+      }
+    ],
+    "page": 2,
+    "type": "customItem",
+    "limit": 3,
+    "offset": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        40
+      ],
+      [
+        0,
+        80
+      ],
+      [
+        0,
+        120
+      ],
+      [
+        0,
+        160
+      ]
+    ],
+    "pdfPage": 1,
+    "session": "Other Foreseeable / Identified Hazards",
+    "session_zh": "其他可預見 / 已識別的危害",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "itemName": "Hazard"
+  },
+  {
+    "key": "Part2B",
+    "item": "",
+    "page": 2,
+    "type": "text",
+    "bgColor": "#FFFCF2",
+    "divider": 1,
+    "session": "B Isolation Checklist",
+    "session_zh": "B 隔離清單"
+  },
+  {
+    "key": "sign2B1",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "bgColor": "#FFFCF2",
+    "pdfPage": 1,
+    "session": "Normal service in the confined space suspended",
+    "session_zh": "停止密閉空間內的日常運作",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        1534,
+        988,
+        1580
+      ],
+      "datetimefull": [
+        992,
+        1539,
+        992,
+        1560
+      ]
+    }
+  },
+  {
+    "key": "sign2B2",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "bgColor": "#FFFCF2",
+    "divider": 1,
+    "pdfPage": 1,
+    "session": "All inlets and outlets isolated / blanked off",
+    "session_zh": "隔離或封閉所有出入口位",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        1584,
+        988,
+        1630
+      ],
+      "datetimefull": [
+        992,
+        1589,
+        992,
+        1610
+      ]
+    }
+  },
+  {
+    "key": "sign2B3",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "bgColor": "#FFFCF2",
+    "divider": 1,
+    "pdfPage": 2,
+    "session": "All power isolated (electrical / mechanical / hydraulic / others)",
+    "session_zh": "隔離所有動力（電氣 / 機動 / 油壓 / 其它）",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        133,
+        988,
+        179
+      ],
+      "datetimefull": [
+        992,
+        133,
+        992,
+        156
+      ]
+    }
+  },
+  {
+    "key": "sign2B4",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "bgColor": "#FFFCF2",
+    "divider": 1,
+    "pdfPage": 2,
+    "session": "Heat source isolated",
+    "session_zh": "隔離所有熱源",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        183,
+        988,
+        229
+      ],
+      "datetimefull": [
+        992,
+        183,
+        992,
+        206
+      ]
+    }
+  },
+  {
+    "key": "sign2B5",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "bgColor": "#FFFCF2",
+    "divider": 1,
+    "pdfPage": 2,
+    "session": "Other source or danger isolated",
+    "session_zh": "隔離其它有危險的來源",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        235,
+        988,
+        282
+      ],
+      "datetimefull": [
+        992,
+        236,
+        992,
+        258
+      ]
+    }
+  },
+  {
+    "key": "sign2B5Remark",
+    "page": 2,
+    "type": "input",
+    "preset": "",
+    "bgColor": "#FFFCF2",
+    "pdfPage": 2,
+    "session": "Please specify",
+    "session_zh": "（請列明）",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      588,
+      237
+    ]
+  },
+  {
+    "key": "Part2C",
+    "item": "",
+    "page": 2,
+    "type": "text",
+    "divider": 1,
+    "session": "C Cleaning & Purging",
+    "session_zh": "C 清潔及清洗"
+  },
+  {
+    "key": "sign2C1Remark",
+    "page": 2,
+    "type": "input",
+    "preset": "",
+    "pdfPage": 2,
+    "session": "method",
+    "session_zh": "方法",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      368,
+      338
+    ]
+  },
+  {
+    "key": "sign2C1",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Cleaning & Purging",
+    "session_zh": "清潔及清洗",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        337,
+        988,
+        383
+      ],
+      "datetimefull": [
+        992,
+        337,
+        992,
+        362
+      ]
+    }
+  },
+  {
+    "key": "sign2C2",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Inspection & check",
+    "session_zh": "視察及檢查",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        388,
+        988,
+        435
+      ],
+      "datetimefull": [
+        992,
+        388,
+        992,
+        413
+      ]
+    }
+  },
+  {
+    "key": "Part2D",
+    "item": "(Different levels and locations)",
+    "item_zh": "（不同水平及位置）",
+    "page": 2,
+    "type": "text",
+    "divider": 1,
+    "session": "D Atmospheric Testing",
+    "session_zh": "D 大氣測試"
+  },
+  {
+    "key": "Part2D1",
+    "item": "Oxygen (between 19.5% and 23%)",
+    "item_zh": "氧氣（介乎 19.5% 至 23%）",
+    "page": 2,
+    "type": "text",
+    "divider": 1,
+    "session": ""
+  },
+  {
+    "key": "Part2D1ResultL1",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 1",
+    "session_zh": "位置 1",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      528,
+      537
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "Part2D1ResultL2",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 2",
+    "session_zh": "位置 2",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      643,
+      537
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "Part2D1ResultL3",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 3",
+    "session_zh": "位置 3",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      757,
+      537
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "sign2D1",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Atmospheric Testing - Oxygen",
+    "session_zh": "大氣測試 - 氧氣",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        523,
+        988,
+        570
+      ],
+      "datetimefull": [
+        992,
+        523,
+        992,
+        548
+      ]
+    }
+  },
+  {
+    "key": "Part2D2",
+    "item": "Combustible gases (not>10% of LEL)",
+    "item_zh": "可燃氣體（不可大於 10% LEL）",
+    "page": 2,
+    "type": "text",
+    "divider": 1,
+    "session": ""
+  },
+  {
+    "key": "Part2D2ResultL1",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 1",
+    "session_zh": "位置 1",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      528,
+      592
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "Part2D2ResultL2",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 2",
+    "session_zh": "位置 2",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      643,
+      592
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "Part2D2ResultL3",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 3",
+    "session_zh": "位置 3",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      757,
+      592
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "sign2D2",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Atmospheric Testing - Combustible gases",
+    "session_zh": "大氣測試 - 可燃氣體",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        575,
+        988,
+        622
+      ],
+      "datetimefull": [
+        992,
+        575,
+        992,
+        600
+      ]
+    }
+  },
+  {
+    "key": "Part2D3",
+    "item": "Carbon Monoxide (not >25ppm)",
+    "item_zh": "一氧化碳（不可大於 25ppm）",
+    "page": 2,
+    "type": "text",
+    "divider": 1,
+    "session": ""
+  },
+  {
+    "key": "Part2D3ResultL1",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 1",
+    "session_zh": "位置 1",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      528,
+      642
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "Part2D3ResultL2",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 2",
+    "session_zh": "位置 2",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      643,
+      642
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "Part2D3ResultL3",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 3",
+    "session_zh": "位置 3",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      757,
+      642
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "sign2D3",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Atmospheric Testing - Carbon Monoxide",
+    "session_zh": "大氣測試 - 一氧化碳",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        627,
+        988,
+        673
+      ],
+      "datetimefull": [
+        992,
+        627,
+        992,
+        651
+      ]
+    }
+  },
+  {
+    "key": "Part2D4",
+    "item": "Hydrogen Sulfide (not >10ppm)",
+    "item_zh": "硫化氫（不可大於 10ppm）",
+    "page": 2,
+    "type": "text",
+    "divider": 1,
+    "session": ""
+  },
+  {
+    "key": "Part2D4ResultL1",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 1",
+    "session_zh": "位置 1",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      528,
+      694
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "Part2D4ResultL2",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 2",
+    "session_zh": "位置 2",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      643,
+      694
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "Part2D4ResultL3",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 3",
+    "session_zh": "位置 3",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      757,
+      694
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "sign2D4",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Atmospheric Testing - Hydrogen Sulfide",
+    "session_zh": "大氣測試 - 硫化氫",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        679,
+        988,
+        724
+      ],
+      "datetimefull": [
+        992,
+        679,
+        992,
+        704
+      ]
+    }
+  },
+  {
+    "key": "Part2D5",
+    "item": "Other",
+    "item_zh": "其他",
+    "page": 2,
+    "type": "text",
+    "divider": 1,
+    "session": ""
+  },
+  {
+    "key": "Part2D5Name",
+    "page": 2,
+    "type": "input",
+    "lines": 2,
+    "pdfPage": 2,
+    "session": "specify the name and criteria",
+    "session_zh": "請說明名稱及標準",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      254,
+      778
+    ],
+    "textlimit": 80
+  },
+  {
+    "key": "Part2D5ResultL1",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 1",
+    "session_zh": "位置 1",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      528,
+      769
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "Part2D5ResultL2",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 2",
+    "session_zh": "位置 2",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      643,
+      769
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "Part2D5ResultL3",
+    "page": 2,
+    "type": "input",
+    "preset": "Pass",
+    "pdfPage": 2,
+    "session": "Location 3",
+    "session_zh": "位置 3",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      757,
+      769
+    ],
+    "textlimit": 10
+  },
+  {
+    "key": "sign2D5",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Atmospheric Testing - Other",
+    "session_zh": "大氣測試 - 其他",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        756,
+        988,
+        815
+      ],
+      "datetimefull": [
+        992,
+        756,
+        992,
+        781
+      ]
+    }
+  },
+  {
+    "key": "Part2E",
+    "item": "",
+    "page": 2,
+    "type": "text",
+    "divider": 1,
+    "session": "E Fire Precautionary Measures",
+    "session_zh": "E 防火措施"
+  },
+  {
+    "key": "Part2EItem",
+    "item": [
+      {
+        "key": "WorkInvolved",
+        "type": "input",
+        "session": "",
+        "location": [
+          174,
+          903
+        ],
+        "textlimit": 130
+      },
+      {
+        "key": "sign",
+        "flow": 2,
+        "page": 2,
+        "type": "signature",
+        "pdfPage": 2,
+        "session": "Fire Precautionary Measures",
+        "session_zh": "防火措施",
+        "disabled": 1,
+        "editable": [
+          "part_2"
+        ],
+        "location": {
+          "signature": [
+            861,
+            890,
+            987,
+            927
+          ],
+          "datetimefull": [
+            991,
+            890,
+            991,
+            915
+          ]
+        }
+      }
+    ],
+    "page": 2,
+    "type": "customItem",
+    "limit": 3,
+    "offset": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        40
+      ],
+      [
+        0,
+        80
+      ],
+      [
+        0,
+        120
+      ],
+      [
+        0,
+        160
+      ]
+    ],
+    "pdfPage": 2,
+    "session": "Fire Precautionary Measures",
+    "session_Zh": "防火措施",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "itemName": "Measures"
+  },
+  {
+    "key": "Part2F",
+    "item": "",
+    "page": 2,
+    "type": "text",
+    "bgColor": "#FFFCF2",
+    "divider": 1,
+    "session": "F Safety Protection Equipment",
+    "session_zh": "F 安全防護設備"
+  },
+  {
+    "key": "Part2F1",
+    "item": [
+      {
+        "key": 1,
+        "title": "Yes",
+        "location": [
+          776,
+          1072,
+          806,
+          1102
+        ]
+      },
+      {
+        "key": 2,
+        "title": "No",
+        "location": []
+      }
+    ],
+    "page": 2,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "divider": 0,
+    "pdfPage": 2,
+    "session": "通風要求 Ventilation Requirements",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "sign2F1",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Ventilation Requirements",
+    "session_zh": " 通風要求",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        1068,
+        988,
+        1105
+      ],
+      "datetimefull": [
+        992,
+        1068,
+        992,
+        1093
+      ]
+    }
+  },
+  {
+    "key": "Part2F2",
+    "item": [
+      {
+        "key": 1,
+        "title": "Yes",
+        "location": [
+          776,
+          1115,
+          806,
+          1145
+        ]
+      },
+      {
+        "key": 2,
+        "title": "No",
+        "location": []
+      }
+    ],
+    "page": 2,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "divider": 0,
+    "pdfPage": 2,
+    "session": "呼吸器具 Respirators",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "sign2F2",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Respirators",
+    "session_zh": "呼吸器具",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        1111,
+        988,
+        1147
+      ],
+      "datetimefull": [
+        992,
+        1111,
+        992,
+        1126
+      ]
+    }
+  },
+  {
+    "key": "Part2F3",
+    "item": [
+      {
+        "key": 1,
+        "title": "Yes",
+        "location": [
+          776,
+          1156,
+          806,
+          1186
+        ]
+      },
+      {
+        "key": 2,
+        "title": "No",
+        "location": []
+      }
+    ],
+    "page": 2,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "divider": 0,
+    "pdfPage": 2,
+    "session": "衣物 Clothing",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "sign2F3",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Clothing",
+    "session_zh": "衣物",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        1153,
+        988,
+        1189
+      ],
+      "datetimefull": [
+        992,
+        1153,
+        992,
+        1178
+      ]
+    }
+  },
+  {
+    "key": "Part2F4",
+    "item": [
+      {
+        "key": 1,
+        "title": "Yes",
+        "location": [
+          776,
+          1197,
+          806,
+          1227
+        ]
+      },
+      {
+        "key": 2,
+        "title": "No",
+        "location": []
+      }
+    ],
+    "page": 2,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "divider": 0,
+    "pdfPage": 2,
+    "session": "頭、手、腳部防護 Head, Hand & Foot Protection",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "sign2F4",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Head, Hand & Foot Protection",
+    "session_zh": "頭、手、腳部防護 ",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        1195,
+        988,
+        1232
+      ],
+      "datetimefull": [
+        992,
+        1195,
+        992,
+        1220
+      ]
+    }
+  },
+  {
+    "key": "Part2F5",
+    "item": [
+      {
+        "key": 1,
+        "title": "Yes",
+        "location": [
+          776,
+          1241,
+          806,
+          1271
+        ]
+      },
+      {
+        "key": 2,
+        "title": "No",
+        "location": []
+      }
+    ],
+    "page": 2,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "divider": 0,
+    "pdfPage": 2,
+    "session": "防護屏障 Protective Shields",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "sign2F5",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Protective Shields",
+    "session_zh": "防護屏障",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        1238,
+        988,
+        1274
+      ],
+      "datetimefull": [
+        992,
+        1238,
+        992,
+        1263
+      ]
+    }
+  },
+  {
+    "key": "Part2F6",
+    "item": [
+      {
+        "key": 1,
+        "title": "Yes",
+        "location": [
+          776,
+          1283,
+          806,
+          1313
+        ]
+      },
+      {
+        "key": 2,
+        "title": "No",
+        "location": []
+      }
+    ],
+    "page": 2,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "divider": 0,
+    "pdfPage": 2,
+    "session": "救生繩及吊帶 Life Lines & Harness",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "sign2F6",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Life Lines & Harness",
+    "session_zh": "救生繩及吊帶",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        1280,
+        988,
+        1316
+      ],
+      "datetimefull": [
+        992,
+        1280,
+        992,
+        1305
+      ]
+    }
+  },
+  {
+    "key": "Part2F7",
+    "item": [
+      {
+        "key": 1,
+        "title": "Yes",
+        "location": [
+          776,
+          1325,
+          806,
+          1355
+        ]
+      },
+      {
+        "key": 2,
+        "title": "No",
+        "location": []
+      }
+    ],
+    "page": 2,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "divider": 0,
+    "pdfPage": 2,
+    "session": "照明 Lighting",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "sign2F7",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Lighting",
+    "session_zh": "照明",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        1323,
+        988,
+        1359
+      ],
+      "datetimefull": [
+        992,
+        1323,
+        992,
+        1348
+      ]
+    }
+  },
+  {
+    "key": "Part2F8",
+    "item": [
+      {
+        "key": 1,
+        "title": "Yes",
+        "location": [
+          776,
+          1369,
+          806,
+          1399
+        ]
+      },
+      {
+        "key": 2,
+        "title": "No",
+        "location": []
+      }
+    ],
+    "page": 2,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "divider": 0,
+    "pdfPage": 2,
+    "session": "眼晴 Eye Protection",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "sign2F8",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Eye Protection",
+    "session_zh": "眼晴",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        1365,
+        988,
+        1401
+      ],
+      "datetimefull": [
+        992,
+        1365,
+        992,
+        1390
+      ]
+    }
+  },
+  {
+    "key": "Part2F9",
+    "item": [
+      {
+        "key": 1,
+        "title": "Yes",
+        "location": [
+          776,
+          1410,
+          806,
+          1440
+        ]
+      },
+      {
+        "key": 2,
+        "title": "No",
+        "location": []
+      }
+    ],
+    "page": 2,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "divider": 0,
+    "pdfPage": 2,
+    "session": "聽覺保護 Ear Protection",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "sign2F9",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Ear Protection",
+    "session_zh": "聽覺保護",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        1408,
+        988,
+        1444
+      ],
+      "datetimefull": [
+        992,
+        1408,
+        992,
+        1433
+      ]
+    }
+  },
+  {
+    "key": "Part2F10Name",
+    "page": 2,
+    "type": "input",
+    "lines": 2,
+    "preset": "Pass",
+    "bgColor": "#FFFCF2",
+    "pdfPage": 2,
+    "session": "Others (please specify)",
+    "session_zh": "其它 (請列明)",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      320,
+      1451
+    ],
+    "textlimit": 40
+  },
+  {
+    "key": "Part2F10",
+    "item": [
+      {
+        "key": 1,
+        "title": "Yes",
+        "location": [
+          776,
+          1457,
+          806,
+          1487
+        ]
+      },
+      {
+        "key": 2,
+        "title": "No",
+        "location": []
+      }
+    ],
+    "page": 2,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "divider": 0,
+    "pdfPage": 2,
+    "session": "Other",
+    "session_zh": "其它",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "sign2F10",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 2,
+    "session": "Other",
+    "session_zh": "其它",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "signature": [
+        861,
+        1450,
+        988,
+        1494
+      ],
+      "datetimefull": [
+        992,
+        1450,
+        992,
+        1475
+      ]
+    }
+  },
+  {
+    "key": "Part2G",
+    "item": "",
+    "page": 2,
+    "type": "text",
+    "divider": 1,
+    "session": "G Other Safety Precautionary Measures",
+    "session_zh": "G 其他安全預防措施"
+  },
+  {
+    "key": "Part2G1",
+    "page": 2,
+    "type": "input",
+    "caption": "(equipment and methods)",
+    "caption_zh": "(設備和方法)",
+    "pdfPage": 2,
+    "session": "Communications between certified workers and standby person",
+    "session_zh": "核准工人與候命人員之聯絡",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      175,
+      1600
+    ],
+    "textlimit": 120
+  },
+  {
+    "key": "Part2G2",
+    "page": 2,
+    "type": "input",
+    "lines": 2,
+    "pdfPage": 3,
+    "session": "Evacuation Procedures",
+    "session_zh": "疏散撤出程序",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      389,
+      137
+    ],
+    "textlimit": 200
+  },
+  {
+    "key": "Part2G3",
+    "page": 2,
+    "type": "input",
+    "caption": "(equipment and methods)",
+    "caption_zh": "(設備和方法)",
+    "pdfPage": 3,
+    "session": "Continuous Monitoring / Periodical Monitoring",
+    "session_zh": "連續 / 定期監察",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      179,
+      266
+    ],
+    "textlimit": 120
+  },
+  {
+    "key": "Part2G4",
+    "page": 2,
+    "type": "input",
+    "lines": 2,
+    "pdfPage": 3,
+    "session": "Remarks",
+    "session_zh": "備註",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      263,
+      296
+    ],
+    "textlimit": 220
+  },
+  {
+    "key": "Part2H",
+    "item": "",
+    "page": 2,
+    "type": "text",
+    "divider": 1,
+    "session": "H Declaration",
+    "session_zh": "H 聲明"
+  },
+  {
+    "key": "Part2H1",
+    "item": "I have personally carried out a risk assessment specific to the scope of work being undertaken and the working condition within the confined space.",
+    "item_zh": "我已親自對密閉空間內所工作的性質和環境進行了風險評估。",
+    "page": 2,
+    "type": "text",
+    "session": ""
+  },
+  {
+    "key": "Part2H2",
+    "item": "In the risk assessment, I have made specific recommendations on the adopted measures to ensure the health\n& safety of all persons entering in or working within the confined space.",
+    "item_zh": "風險評估中，我已就需要採取的措施提出具體建議，以確保進入或在密閉空間內工作的所有人員之健康與安全。",
+    "page": 2,
+    "type": "text",
+    "session": ""
+  },
+  {
+    "key": "Part2H3",
+    "item": "I have attached a copy of the risk assessment to this Permit-To-Work.",
+    "item_zh": "我已將風險評估報告的副本附在此工作許可證上。",
+    "page": 2,
+    "type": "text",
+    "session": ""
+  },
+  {
+    "key": "Part2H4",
+    "item": "I have explained to workers and standby persons assigned to this work about all safety measures or precautions and will ensure all the assigned workers to properly use the recommended PPE specified in the risk assessment.",
+    "item_zh": "我已向參與本工作的工人及候命人員講解需要採取的一切安全措施或預防措施，並將確保所有獲指派的工人按照風險評估所列的建議適當地使用個人防護裝備。",
+    "page": 2,
+    "type": "text",
+    "session": ""
+  },
+  {
+    "key": "Part2HPdfAttachments",
+    "page": 2,
+    "type": "imagePicker",
+    "allow": [
+      "pdf"
+    ],
+    "session": "PDF Attachments",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": [
+      160,
+      352,
+      1077,
+      914,
+      160,
+      1015,
+      1077,
+      1585
+    ],
+    "limitation": 5
+  },
+  {
+    "key": "sign2H",
+    "flow": 2,
+    "page": 2,
+    "type": "signature",
+    "pdfPage": 3,
+    "session": "Declaration",
+    "session_zh": "聲明",
+    "disabled": 1,
+    "editable": [
+      "part_2"
+    ],
+    "location": {
+      "fullname": [
+        133,
+        823
+      ],
+      "signature": [
+        473,
+        795,
+        769,
+        854
+      ],
+      "datetimefull": [
+        800,
+        822,
+        920,
+        822
+      ]
+    }
+  },
+  {
+    "key": "Part3",
+    "item": "(to be completed by main contractor or his authorized representatives)",
+    "item_zh": "(由總承建商或其授權代表填寫)",
+    "page": 3,
+    "type": "text",
+    "divider": 1,
+    "session": "Part 3: Authorization",
+    "session_zh": "第三部分：授權證明書"
+  },
+  {
+    "key": "Part3State",
+    "item": "I certify that I have personally checked all the above conditions and acknowledge that all the above particulars are accurate or have been implemented. I certify that:",
+    "item_zh": "本人證明已親自核對上述所有情況，並確認上述情況是準確的或已實施。我證明：",
+    "page": 3,
+    "type": "text",
+    "session": ""
+  },
+  {
+    "key": "Part31",
+    "item": [
+      {
+        "key": 2,
+        "title": "Confirmed",
+        "location": [
+          1036,
+          1000,
+          1066,
+          1030
+        ]
+      },
+      {
+        "key": 1,
+        "title": "Nil",
+        "location": []
+      }
+    ],
+    "page": 3,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "default": "Nil",
+    "divider": 0,
+    "pdfPage": 3,
+    "session": "Part 1 and 2 have been properly completed.",
+    "session_zh": "第 1 及 2 部分已適當完成。",
+    "disabled": 1,
+    "editable": [
+      "part_3"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "Part32",
+    "item": [
+      {
+        "key": 2,
+        "title": "The confined space is safe for entry without breathing apparatus.",
+        "title_zh": "進入密閉空間不須配帶呼吸器具",
+        "location": [
+          1036,
+          1052,
+          1066,
+          1082
+        ]
+      },
+      {
+        "key": 3,
+        "title": "To enter the confined space, approved breathing apparatus must be worn.",
+        "title_zh": "進入密閉空間，必須配帶認可的呼吸器具",
+        "location": [
+          1036,
+          1104,
+          1066,
+          1134
+        ]
+      },
+      {
+        "key": 1,
+        "title": "Nil",
+        "location": []
+      }
+    ],
+    "page": 3,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "default": "Nil",
+    "divider": 0,
+    "pdfPage": 3,
+    "session": "Please, Select",
+    "session_zh": "請選擇",
+    "disabled": 1,
+    "editable": [
+      "part_3"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "Part33",
+    "item": [
+      {
+        "key": 2,
+        "title": "Continuous monitoring is required.",
+        "title_zh": "須連續監察",
+        "location": [
+          1036,
+          1155,
+          1066,
+          1185
+        ]
+      },
+      {
+        "key": 3,
+        "title": "Periodical monitoring is required.",
+        "title_zh": "須定期監察",
+        "location": [
+          1036,
+          1207,
+          1066,
+          1237
+        ]
+      },
+      {
+        "key": 4,
+        "title": "No foreseeable changes in the environment during the work, monitoring is required.",
+        "title_zh": "預計工作期間環境不會發生變化，不須監察。",
+        "location": [
+          1036,
+          1259,
+          1066,
+          1289
+        ]
+      },
+      {
+        "key": 1,
+        "title": "Nil",
+        "location": []
+      }
+    ],
+    "page": 3,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "default": "Nil",
+    "divider": 0,
+    "pdfPage": 3,
+    "session": "Please, Select",
+    "session_zh": "請選擇",
+    "disabled": 1,
+    "editable": [
+      "part_3"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "Part34",
+    "page": 3,
+    "type": "input",
+    "preset": "",
+    "bgColor": "#FFFCF2",
+    "pdfPage": 3,
+    "session": "The necessary safety precautions for entering into the confined space are:",
+    "session_zh": "進入密閉空間需要採取以下安全預防措施：",
+    "disabled": 1,
+    "editable": [
+      "part_3"
+    ],
+    "location": [
+      580,
+      1303
+    ],
+    "textlimit": 60
+  },
+  {
+    "key": "Part35",
+    "item": [
+      {
+        "key": 2,
+        "title": "Confirmed",
+        "location": [
+          1036,
+          1365,
+          1066,
+          1395
+        ]
+      },
+      {
+        "key": 1,
+        "title": "Nil",
+        "location": []
+      }
+    ],
+    "page": 3,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "default": "Nil",
+    "divider": 0,
+    "pdfPage": 3,
+    "session": "Date & Time of Expiry of the Certificate",
+    "session_zh": "證書的到期日及時間",
+    "disabled": 1,
+    "editable": [
+      "part_3"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "Part36",
+    "item": [
+      {
+        "key": 2,
+        "title": "Confirmed",
+        "location": [
+          1036,
+          1418,
+          1066,
+          1448
+        ]
+      },
+      {
+        "key": 1,
+        "title": "Nil",
+        "location": []
+      }
+    ],
+    "page": 3,
+    "type": "radioButtonGroup",
+    "bgColor": "#FFFCF2",
+    "default": "Nil",
+    "divider": 0,
+    "pdfPage": 3,
+    "session": "All works are certified workers.",
+    "session_zh": "所有工人均為核准工人。",
+    "disabled": 1,
+    "editable": [
+      "part_3"
+    ],
+    "location": {
+      "style": "tick"
+    },
+    "direction": "column"
+  },
+  {
+    "key": "Part37Other",
+    "page": 3,
+    "type": "input",
+    "lines": 3,
+    "preset": "",
+    "pdfPage": 3,
+    "session": "Other remarks and limitations:",
+    "session_zh": "其他備註及限制:",
+    "disabled": 1,
+    "editable": [
+      "part_3"
+    ],
+    "location": [
+      448,
+      1464
+    ],
+    "textlimit": 300
+  },
+  {
+    "key": "sign3",
+    "flow": 3,
+    "page": 3,
+    "type": "signature",
+    "pdfPage": 3,
+    "session": "Authorization",
+    "session_zh": "授權證明",
+    "disabled": 1,
+    "editable": [
+      "part_3"
+    ],
+    "location": {
+      "fullname": [
+        130,
+        1582
+      ],
+      "signature": [
+        490,
+        1570,
+        785,
+        1622
+      ],
+      "datetimefull": [
+        812,
+        1593,
+        932,
+        1593
+      ]
+    }
+  },
+  {
+    "key": "Part4",
+    "item": "(to be completed by subcontractor / person-in-charge of the work)",
+    "item_zh": "(由分判或工程負責人填寫)",
+    "page": 4,
+    "type": "text",
+    "divider": 1,
+    "session": "Part 4: Acceptance of Permit-To-Work",
+    "session_zh": "第四部份：簽收工作許可證"
+  },
+  {
+    "key": "Part4State",
+    "item": "I have read and understood the description of this Permit-To-Work and shall undertake to work in accordance with all the conditions laid down in it.",
+    "item_zh": "本人已閱讀及明白此工作許可證內容，並承諾會根據許可證內的指示工作。",
+    "page": 4,
+    "type": "text",
+    "session": ""
+  },
+  {
+    "key": "sign4",
+    "flow": 4,
+    "page": 4,
+    "type": "signature",
+    "pdfPage": 4,
+    "session": "Acceptance of Permit-To-Work",
+    "session_zh": "簽收工作許可證",
+    "disabled": 1,
+    "editable": [
+      "part_4"
+    ],
+    "location": {
+      "fullname": [
+        129,
+        316
+      ],
+      "signature": [
+        480,
+        300,
+        790,
+        353
+      ],
+      "datetimefull": [
+        812,
+        322,
+        912,
+        322
+      ]
+    }
+  },
+  {
+    "key": "Part5",
+    "item": "",
+    "page": 5,
+    "type": "text",
+    "divider": 1,
+    "session": "Part 5: Extension of Time of Permit-To-Work",
+    "session_zh": "第五部分：延長許可證的有效期"
+  },
+  {
+    "key": "Part5A",
+    "item": "The work has not been completed as scheduled and permission to continue is requested.",
+    "item_zh": "限時內未能完成工作，要求延長工作時間。",
+    "page": 5,
+    "type": "text",
+    "session": "Request for Extension of Time of the Permit",
+    "session_zh": "要求延長許可證有效時間"
+  },
+  {
+    "key": "Part5AItem",
+    "item": [
+      {
+        "key": "sign5A",
+        "flow": 5,
+        "page": 5,
+        "type": "signature",
+        "pdfPage": 4,
+        "session": "Request for Extension of Time",
+        "session_zh": "要求延長許可證有效時間",
+        "disabled": 1,
+        "editable": [
+          "part_5"
+        ],
+        "location": {
+          "fullname": [
+            133,
+            588
+          ],
+          "signature": [
+            479,
+            581,
+            785,
+            623
+          ],
+          "datetimefull": [
+            808,
+            593,
+            928,
+            593
+          ]
+        }
+      }
+    ],
+    "page": 5,
+    "type": "customItem",
+    "limit": 1,
+    "offset": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        40
+      ],
+      [
+        0,
+        80
+      ],
+      [
+        0,
+        120
+      ],
+      [
+        0,
+        160
+      ]
+    ],
+    "pdfPage": 4,
+    "session": "Request for Extension of Time",
+    "session_zh": "要求延長許可證有效時間",
+    "disabled": 1,
+    "editable": [
+      "part_5"
+    ],
+    "itemName": "Item"
+  },
+  {
+    "key": "Part5B",
+    "item": "(to be completed by contractor or his authorized representatives)",
+    "item_zh": "(由承建商或其授權代表填寫)",
+    "page": 5,
+    "type": "text",
+    "session": "Extension of Permit",
+    "session_zh": "延長許可證期限"
+  },
+  {
+    "key": "Part5BItem",
+    "item": [
+      {
+        "key": "Part5BState",
+        "item": "I have re-assessed and re-examined the confined space detailed above, and confirm that this work permit can be",
+        "item_zh": "本人已重新查明和檢驗上述密閉空間，並証實此工作證可",
+        "page": 5,
+        "type": "text",
+        "session": "",
+        "location": []
+      },
+      {
+        "key": "Part5BExtended",
+        "page": 5,
+        "type": "datetimepicker",
+        "pdfPage": 4,
+        "session": "extended to expire",
+        "session_zh": "延期至",
+        "location": [
+          380,
+          778,
+          500,
+          778
+        ],
+        "interaction": {
+          "linkage": {
+            "child": {
+              "dayAfter": 1
+            },
+            "parent": {
+              "key": "PeriodPermitEnd"
+            }
+          }
+        }
+      },
+      {
+        "key": "Part5BSubject",
+        "page": 5,
+        "type": "input",
+        "lines": 3,
+        "pdfPage": 4,
+        "session": "Subject to",
+        "session_zh": "並須遵照以下",
+        "location": [
+          800,
+          755
+        ],
+        "textlimit": 150
+      },
+      {
+        "key": "Part5BPrecautions",
+        "page": 5,
+        "type": "input",
+        "lines": 2,
+        "pdfPage": 4,
+        "session": "Further safety precautions",
+        "session_zh": "進一步的安全預防措施",
+        "location": [
+          409,
+          843
+        ],
+        "textlimit": 180
+      },
+      {
+        "key": "Part5BRemark",
+        "page": 5,
+        "type": "input",
+        "lines": 2,
+        "pdfPage": 4,
+        "session": "Remarks & limitations",
+        "session_zh": "備註及限制",
+        "location": [
+          372,
+          897
+        ],
+        "textlimit": 180
+      },
+      {
+        "key": "sign5B",
+        "flow": 5,
+        "page": 5,
+        "type": "signature",
+        "pdfPage": 4,
+        "session": "Extension of Permit",
+        "session_zh": "延長許可證期限",
+        "disabled": 1,
+        "editable": [
+          "part_5"
+        ],
+        "location": {
+          "fullname": [
+            130,
+            986
+          ],
+          "signature": [
+            477,
+            975,
+            788,
+            1022
+          ],
+          "datetimefull": [
+            807,
+            993,
+            927,
+            993
+          ]
+        }
+      }
+    ],
+    "page": 5,
+    "type": "customItem",
+    "limit": 1,
+    "offset": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        40
+      ],
+      [
+        0,
+        80
+      ],
+      [
+        0,
+        120
+      ],
+      [
+        0,
+        160
+      ]
+    ],
+    "pdfPage": 4,
+    "session": "Extension of Permit",
+    "disabled": 1,
+    "editable": [
+      "part_5"
+    ],
+    "itemName": "Item"
+  },
+  {
+    "key": "Part6",
+    "item": "(to be completed by person-in-charge of the work)",
+    "item_zh": "(由工程負責人填寫)",
+    "page": 6,
+    "type": "text",
+    "divider": 1,
+    "session": "Part 6: Completion of Work",
+    "session_zh": "第六部分：工作完成"
+  },
+  {
+    "key": "Part6State",
+    "item": "The work has been completed and all assigned persons, materials and equipment had been withdrawn.",
+    "item_zh": "工作已經完成，所有獲指派人士、物料和設備已撤離現場。",
+    "page": 6,
+    "type": "text",
+    "session": ""
+  },
+  {
+    "key": "sign6",
+    "flow": 6,
+    "page": 6,
+    "type": "signature",
+    "pdfPage": 4,
+    "session": "Completion of Work ",
+    "session_zh": "工作完成",
+    "disabled": 1,
+    "editable": [
+      "part_6"
+    ],
+    "location": {
+      "fullname": [
+        130,
+        1180
+      ],
+      "signature": [
+        477,
+        1166,
+        788,
+        1224
+      ],
+      "datetimefull": [
+        807,
+        1193,
+        927,
+        1193
+      ]
+    }
+  },
+  {
+    "key": "Part7",
+    "item": "(to be completed by contractor or his authorized representatives)",
+    "item_zh": "(由承建商或其授權代表填寫)",
+    "page": 7,
+    "type": "text",
+    "divider": 1,
+    "session": "Part 7: Cancellation",
+    "session_zh": "第七部分: 註銷"
+  },
+  {
+    "key": "Part7State",
+    "item": "This Permit-To-Work is now cancelled; and A new Permit-To-Work will be required if work is to be continued.",
+    "item_zh": "現註銷此工作許可證；及如要繼續工作，須申領新工作許可證。",
+    "page": 7,
+    "type": "text",
+    "session": ""
+  },
+  {
+    "key": "sign7",
+    "flow": 7,
+    "page": 7,
+    "type": "signature",
+    "pdfPage": 4,
+    "session": "Cancellation",
+    "session_zh": "註銷",
+    "disabled": 1,
+    "editable": [
+      "part_7"
+    ],
+    "location": {
+      "fullname": [
+        130,
+        1446
+      ],
+      "signature": [
+        477,
+        1416,
+        788,
+        1483
+      ],
+      "datetimefull": [
+        807,
+        1452,
+        927,
+        1452
+      ]
+    }
+  }
+]
