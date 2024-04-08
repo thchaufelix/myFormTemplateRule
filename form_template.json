@@ -419,13 +419,17 @@
           "template": [
             {
               "name": "key",
-              "input_type": "text",
-              "required": true
+              "props": {
+                "input_type": "text",
+                "required": true
+              }
             },
             {
               "name": "title",
-              "input_type": "text",
-              "required": true
+              "props": {
+                "input_type": "text",
+                "required": true
+              }
             }
           ],
           "required": true
