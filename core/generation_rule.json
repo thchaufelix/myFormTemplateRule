@@ -669,12 +669,12 @@
         "props": {
           "item_type": "list",
           "size": 1,
-          "duplicable": false,
+          "duplicable": true,
           "required": true,
           "props": {
             "item_type": "list",
             "size": 2,
-            "duplicable": true,
+            "duplicable": false,
             "required": true,
             "props": {
               "item_type": "numeric",
